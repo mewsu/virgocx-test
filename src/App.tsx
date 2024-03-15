@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { Form, Input, Switch, Radio, Checkbox, Button } from "antd";
 import "./App.css";
 
-interface FormState {
-  isEditable: boolean;
-  firstName: string;
-  isProficient: boolean;
-  tools: string[];
-}
-
 const App: React.FC = () => {
   const [isEditable, setIsEditable] = useState<boolean>(true);
   const [firstName, setFirstName] = useState<string>("");
